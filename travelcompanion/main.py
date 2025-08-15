@@ -1,2 +1,17 @@
+from fastapi import FastAPI
+import uvicorn
+from contextlib import asynccontextmanager
+from models.database import db_helper
+from models.base import Base
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    async with db_helper.engine.begin() as conn:
+        await conn.run_sync(Base.metadata.create_all)
+
+    yield
+
+app = FastAPI(lifespan=lifespan)
+
 if __name__ == "__main__":
-    print("Hello World")
+    uvicorn.run("main:app", reload=True)
