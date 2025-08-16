@@ -26,7 +26,7 @@ class UserPreference(Base):
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), index=True)
     category_id: Mapped[int] = mapped_column(ForeignKey("categories.id", ondelete="CASCADE"), index=True)
     weight: Mapped[float] = mapped_column(Float)
-    last_updated: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, index=True)
+    last_updated: Mapped[datetime] = mapped_column(DateTime, default=datetime.now, index=True)
 
     user: Mapped["User"] = relationship(back_populates="preferences")
     category: Mapped["Category"] = relationship(back_populates="preferences")
@@ -43,7 +43,7 @@ class Place(Base):
     latitude: Mapped[float] = mapped_column(Float, index=True)
     longitude: Mapped[float] = mapped_column(Float, index=True)
     api_source: Mapped[Optional[str]] = mapped_column(String(100))
-    last_updated: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, index=True)
+    last_updated: Mapped[datetime] = mapped_column(DateTime, default=datetime.now, index=True)
 
     history: Mapped[list["UserHistory"]] = relationship(back_populates="place")
     category: Mapped["Category"] = relationship(back_populates="place")
@@ -67,7 +67,7 @@ class UserHistory(Base):
     user_id: Mapped[int] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"), index=True)
     place_id: Mapped[int] = mapped_column(ForeignKey("places.id", ondelete="CASCADE"), index=True)
     category_id: Mapped[int] = mapped_column(ForeignKey("categories.id", ondelete="CASCADE"), index=True)
-    request_date: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, index=True)
+    request_date: Mapped[datetime] = mapped_column(DateTime, default=datetime.now, index=True)
     rating: Mapped[Optional[float]] = mapped_column(Float)
 
     user: Mapped["User"] = relationship(back_populates="history")
