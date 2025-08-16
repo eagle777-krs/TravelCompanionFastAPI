@@ -3,6 +3,7 @@ import uvicorn
 from contextlib import asynccontextmanager
 from models.database import db_helper
 from models.base import Base
+from travelcompanion import models
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
