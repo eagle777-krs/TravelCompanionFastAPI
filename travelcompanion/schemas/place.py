@@ -7,6 +7,7 @@ class PlaceBase(BaseModel):
     price_range: str | None = None
     latitude: float
     longitude: float
+    address: str | None
     api_source: str | None = None
 
 class PlaceCreate(PlaceBase):

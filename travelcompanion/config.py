@@ -12,4 +12,7 @@ DB_NAME = os.getenv("DB_NAME")
 DATABASE_URL = f"postgresql+asyncpg://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 DB_ECHO = True
 
-OVERPASS_URL = "https://overpass-api.de/api/interpreter"
+OVERPASS_API_URL = "https://overpass-api.de/api/interpreter"
+GEOGRAPHY_PLACES_API_URL = "https://api.geoapify.com/v2/places"
+
+GEOGRAPHY_PLACES_API_KEY = ""

@@ -42,6 +42,7 @@ class Place(Base):
     price_range: Mapped[Optional[str]] = mapped_column(String(50))
     latitude: Mapped[float] = mapped_column(Float, index=True)
     longitude: Mapped[float] = mapped_column(Float, index=True)
+    address: Mapped[str] = mapped_column(String(255))
     api_source: Mapped[Optional[str]] = mapped_column(String(100))
     last_updated: Mapped[datetime] = mapped_column(DateTime, default=datetime.now, index=True)
 
