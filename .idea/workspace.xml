@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="669094af-5734-4191-920f-b7d5509be9d9" name="Changes" comment="T2 Реализовал функцию api_utils, которая делает запрос на url api, обрабатывает исключения и таймауты. Реализовал openstreetmap_provider.py , где функция обращается к Open Street Map API и возвращает список мест в формате list[dict]">
-      <change afterPath="$PROJECT_DIR$/travelcompanion/places/providers/geography_places.py" afterDir="false" />
+    <list default="true" id="669094af-5734-4191-920f-b7d5509be9d9" name="Changes" comment="T2 Реализовал модуль geography_places.py для парсинга данных с одноименного api">
+      <change afterPath="$PROJECT_DIR$/travelcompanion/places/providers/foursquare_places.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/travelcompanion/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/travelcompanion/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travelcompanion/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/travelcompanion/models/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travelcompanion/places/providers/openstreetmap_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/travelcompanion/places/providers/open_street_map.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/travelcompanion/schemas/place.py" beforeDir="false" afterPath="$PROJECT_DIR$/travelcompanion/schemas/place.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755353900628</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="T2 Реализовал модуль geography_places.py для парсинга данных с одноименного api">
+      <option name="closed" value="true" />
+      <created>1755356113513</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755356113513</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,6 +196,7 @@
     <MESSAGE value="M1 Настроил БД, реализовал класс DatabaseHelper для инъекции сессий в будущем, создал Base от Basemodel и оформил lifespan с созданием таблиц" />
     <MESSAGE value="T2 Реализовал необходимые для работы модели в models.py. Проверил работы базы" />
     <MESSAGE value="T2 Реализовал функцию api_utils, которая делает запрос на url api, обрабатывает исключения и таймауты. Реализовал openstreetmap_provider.py , где функция обращается к Open Street Map API и возвращает список мест в формате list[dict]" />
-    <option name="LAST_COMMIT_MESSAGE" value="T2 Реализовал функцию api_utils, которая делает запрос на url api, обрабатывает исключения и таймауты. Реализовал openstreetmap_provider.py , где функция обращается к Open Street Map API и возвращает список мест в формате list[dict]" />
+    <MESSAGE value="T2 Реализовал модуль geography_places.py для парсинга данных с одноименного api" />
+    <option name="LAST_COMMIT_MESSAGE" value="T2 Реализовал модуль geography_places.py для парсинга данных с одноименного api" />
   </component>
 </project>

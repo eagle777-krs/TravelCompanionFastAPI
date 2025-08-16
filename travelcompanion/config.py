@@ -14,5 +14,7 @@ DB_ECHO = True
 
 OVERPASS_API_URL = "https://overpass-api.de/api/interpreter"
 GEOGRAPHY_PLACES_API_URL = "https://api.geoapify.com/v2/places"
+FOURSQUARE_URL = "https://api.foursquare.com/v3/places/search"
 
+FOURSQUARE_API_KEY = ""
 GEOGRAPHY_PLACES_API_KEY = ""
