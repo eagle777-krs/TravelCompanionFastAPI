@@ -1,7 +1,7 @@
 from travelcompanion.config import OVERPASS_API_URL
 from .api_utils import fetch_json
 
-async def get_places(lat: float, lon: float, radius:int = 1000, amenity: str = "restaurant") -> list[dict]:
+async def get_places(lat: float, lon: float, amenity: str | None, radius: int, limit: int) -> list[dict]:
     """
     Ищет места определённого типа поблизости с использованием Overpass API.
 
@@ -53,7 +53,8 @@ async def get_places(lat: float, lon: float, radius:int = 1000, amenity: str = "
                 "name": tags.get("name", "Без названия"),
                 "lat": el.get("lat"),
                 "lon": el.get("lon"),
-                "address": tags.get("addr:street", "") + tags.get("addr:housenumber", "")
+                "address": tags.get("addr:street", "") + tags.get("addr:housenumber", ""),
+                "category": tags.get("amenity")
             }
         )
 

@@ -1,7 +1,7 @@
 from travelcompanion.config import FOURSQUARE_API_KEY, FOURSQUARE_URL
 from .api_utils import fetch_json
 
-async def get_places(lat: float, lon: float, radius: int = 3000, amenity: str = "restaurant") -> list[dict]:
+async def get_places(lat: float, lon: float, amenity: str | None, radius: int, limit: int) -> list[dict]:
     """
     Получает места рядом через Foursquare API.
 
@@ -19,7 +19,7 @@ async def get_places(lat: float, lon: float, radius: int = 3000, amenity: str = 
         "ll": f"{lat},{lon}",
         "radius": radius,
         "query": amenity,
-        "limit": 10
+        "limit": {limit}
     }
 
     data = await fetch_json(url=FOURSQUARE_URL, params=params | {"headers": headers})

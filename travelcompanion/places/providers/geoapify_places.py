@@ -1,7 +1,7 @@
 from .api_utils import fetch_json
-from travelcompanion.config import GEOGRAPHY_PLACES_API_URL, GEOGRAPHY_PLACES_API_KEY
+from travelcompanion.config import GEOAPIFY_PLACES_API_KEY, GEOAPIFY_PLACES_API_URL
 
-async def get_places(lat: float, lon: float, radius: int = 1000, amenity: str = "catering.restaurant", limit=10) -> list[dict]:
+async def get_places(lat: float, lon: float, amenity: str | None, radius: int, limit: int) -> list[dict]:
 
     """
        Ищет места поблизости с использованием Geoapify Places API.
@@ -46,21 +46,24 @@ async def get_places(lat: float, lon: float, radius: int = 1000, amenity: str = 
         "categories": amenity,
         "filter": f"circle:{lon},{lat},{radius}",
         "limit": limit,
-        "apiKey": GEOGRAPHY_PLACES_API_KEY
+        "apiKey": GEOAPIFY_PLACES_API_KEY
     }
 
-    data = await fetch_json(url=GEOGRAPHY_PLACES_API_URL, params=params)
+    data = await fetch_json(url=GEOAPIFY_PLACES_API_URL, params=params)
 
     result = []
     for el in data.get("features", []):
         prop = el.get("properties", {})
+        categories = prop.get("categories")
+        cat_val = None if len(categories) == 0 else categories[0]
         result.append(
             {
                 "name": prop.get("name", "Без названия"),
-                "lon": el.get("geometry", {}).get("coordinates", [None, None])[0],
-                "lat": el.get("geometry", {}).get("coordinates", [None, None])[1],
+                "lon": el.get("geometry", {}).get("coordinates", None)[0],
+                "lat": el.get("geometry", {}).get("coordinates", None)[1],
                 "rating": prop.get("rating", None),
-                "address": prop.get("address_line1", None)
+                "address": prop.get("address_line1", None),
+                "category": cat_val
             }
         )
     return result

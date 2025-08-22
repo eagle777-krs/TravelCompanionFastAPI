@@ -1,7 +1,6 @@
 from pydantic import BaseModel
 
 class PlaceBase(BaseModel):
-    category_id: int
     name: str
     rating: float | None = None
     price_range: str | None = None
@@ -9,8 +8,10 @@ class PlaceBase(BaseModel):
     longitude: float
     address: str | None
     api_source: str | None = None
+    place_code: str
 
 class PlaceCreate(PlaceBase):
+    category_name: str
     pass
 
 class PlaceRead(PlaceBase):

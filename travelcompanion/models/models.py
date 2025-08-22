@@ -44,6 +44,7 @@ class Place(Base):
     longitude: Mapped[float] = mapped_column(Float, index=True)
     address: Mapped[str] = mapped_column(String(255))
     api_source: Mapped[Optional[str]] = mapped_column(String(100))
+    place_code: Mapped[str] = mapped_column(..., comment="name+lat+lan. using for comparing two places")
     last_updated: Mapped[datetime] = mapped_column(DateTime, default=datetime.now, index=True)
 
     history: Mapped[list["UserHistory"]] = relationship(back_populates="place")
