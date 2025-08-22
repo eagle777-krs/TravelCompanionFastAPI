@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="669094af-5734-4191-920f-b7d5509be9d9" name="Changes" comment="T2 Реализовал модуль foursquare_places.py для парсинга данных с одноименного api">
+      <change afterPath="$PROJECT_DIR$/travelcompanion/places/api_connector/get_places_connector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travelcompanion/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/travelcompanion/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travelcompanion/models/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/travelcompanion/models/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travelcompanion/places/providers/foursquare_places.py" beforeDir="false" afterPath="$PROJECT_DIR$/travelcompanion/places/providers/foursquare_places.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travelcompanion/places/providers/geography_places.py" beforeDir="false" afterPath="$PROJECT_DIR$/travelcompanion/places/providers/geoapify_places.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travelcompanion/places/providers/open_street_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/travelcompanion/places/providers/open_street_map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/travelcompanion/schemas/place.py" beforeDir="false" afterPath="$PROJECT_DIR$/travelcompanion/schemas/place.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;eagle777-krs&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/eagle777-krs/TravelCompanionFastAPI&quot;,
+    &quot;accountId&quot;: &quot;37e75af1-98f7-410c-af3b-60bd17c7dcf6&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="31KDfXzCCfxoNgMLJK60axgHsX0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Python.main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "#2 on features",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Проекты/TravelCompanionFastAPI",
+    "settings.editor.selected.configurable": "preferences.keymap"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Проекты\TravelCompanionFastAPI\travelcompanion\models" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="TravelCompanionFastAPI" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/travelcompanion" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/travelcompanion/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-03e874896e21-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.23892.439" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="669094af-5734-4191-920f-b7d5509be9d9" name="Changes" comment="" />
+      <created>1755263973402</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755263973402</updated>
+    </task>
+    <task id="LOCAL-00001" summary="M1 Настроил БД, реализовал класс DatabaseHelper для инъекции сессий в будущем, создал Base от Basemodel и оформил lifespan с созданием таблиц">
+      <option name="closed" value="true" />
+      <created>1755272926341</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1755272926341</updated>
+    </task>
+    <task id="LOCAL-00002" summary="T2 Реализовал необходимые для работы модели в models.py. Проверил работы базы">
+      <option name="closed" value="true" />
+      <created>1755333566338</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1755333566338</updated>
+    </task>
+    <task id="LOCAL-00003" summary="T2 Реализовал функцию api_utils, которая делает запрос на url api, обрабатывает исключения и таймауты. Реализовал openstreetmap_provider.py , где функция обращается к Open Street Map API и возвращает список мест в формате list[dict]">
+      <option name="closed" value="true" />
+      <created>1755353900628</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755353900628</updated>
+    </task>
+    <task id="LOCAL-00004" summary="T2 Реализовал модуль geography_places.py для парсинга данных с одноименного api">
+      <option name="closed" value="true" />
+      <created>1755356113513</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755356113513</updated>
+    </task>
+    <task id="LOCAL-00005" summary="T2 Реализовал модуль foursquare_places.py для парсинга данных с одноименного api">
+      <option name="closed" value="true" />
+      <created>1755363433083</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1755363433083</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="HEAD" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+              <option name="TEXT_FILTER_SETTINGS">
+                <TextFilterSettings>
+                  <option name="MATCH_CASE" value="true" />
+                </TextFilterSettings>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="M1 Настроил БД, реализовал класс DatabaseHelper для инъекции сессий в будущем, создал Base от Basemodel и оформил lifespan с созданием таблиц" />
+    <MESSAGE value="T2 Реализовал необходимые для работы модели в models.py. Проверил работы базы" />
+    <MESSAGE value="T2 Реализовал функцию api_utils, которая делает запрос на url api, обрабатывает исключения и таймауты. Реализовал openstreetmap_provider.py , где функция обращается к Open Street Map API и возвращает список мест в формате list[dict]" />
+    <MESSAGE value="T2 Реализовал модуль geography_places.py для парсинга данных с одноименного api" />
+    <MESSAGE value="T2 Реализовал модуль foursquare_places.py для парсинга данных с одноименного api" />
+    <option name="LAST_COMMIT_MESSAGE" value="T2 Реализовал модуль foursquare_places.py для парсинга данных с одноименного api" />
+  </component>
+</project>
